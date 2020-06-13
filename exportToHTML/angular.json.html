@@ -1,0 +1,148 @@
+<html>
+<head>
+<title>angular.json</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #a9b7c6;}
+.s1 { color: #6a8759;}
+.s2 { color: #cc7832;}
+.s3 { color: #6897bb;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+angular.json</font>
+</center></td></tr></table>
+<pre><span class="s0">{</span>
+  <span class="s1">&quot;$schema&quot;</span><span class="s2">: </span><span class="s1">&quot;./node_modules/@angular/cli/lib/config/schema.json&quot;</span><span class="s2">,</span>
+  <span class="s1">&quot;version&quot;</span><span class="s2">: </span><span class="s3">1</span><span class="s2">,</span>
+  <span class="s1">&quot;newProjectRoot&quot;</span><span class="s2">: </span><span class="s1">&quot;projects&quot;</span><span class="s2">,</span>
+  <span class="s1">&quot;projects&quot;</span><span class="s2">: </span><span class="s0">{</span>
+    <span class="s1">&quot;ms-front-web&quot;</span><span class="s2">: </span><span class="s0">{</span>
+      <span class="s1">&quot;projectType&quot;</span><span class="s2">: </span><span class="s1">&quot;application&quot;</span><span class="s2">,</span>
+      <span class="s1">&quot;schematics&quot;</span><span class="s2">: </span><span class="s0">{}</span><span class="s2">,</span>
+      <span class="s1">&quot;root&quot;</span><span class="s2">: </span><span class="s1">&quot;&quot;</span><span class="s2">,</span>
+      <span class="s1">&quot;sourceRoot&quot;</span><span class="s2">: </span><span class="s1">&quot;src&quot;</span><span class="s2">,</span>
+      <span class="s1">&quot;prefix&quot;</span><span class="s2">: </span><span class="s1">&quot;app&quot;</span><span class="s2">,</span>
+      <span class="s1">&quot;architect&quot;</span><span class="s2">: </span><span class="s0">{</span>
+        <span class="s1">&quot;build&quot;</span><span class="s2">: </span><span class="s0">{</span>
+          <span class="s1">&quot;builder&quot;</span><span class="s2">: </span><span class="s1">&quot;@angular-devkit/build-angular:browser&quot;</span><span class="s2">,</span>
+          <span class="s1">&quot;options&quot;</span><span class="s2">: </span><span class="s0">{</span>
+            <span class="s1">&quot;outputPath&quot;</span><span class="s2">: </span><span class="s1">&quot;dist/ms-front-web&quot;</span><span class="s2">,</span>
+            <span class="s1">&quot;index&quot;</span><span class="s2">: </span><span class="s1">&quot;src/index.html&quot;</span><span class="s2">,</span>
+            <span class="s1">&quot;main&quot;</span><span class="s2">: </span><span class="s1">&quot;src/main.ts&quot;</span><span class="s2">,</span>
+            <span class="s1">&quot;polyfills&quot;</span><span class="s2">: </span><span class="s1">&quot;src/polyfills.ts&quot;</span><span class="s2">,</span>
+            <span class="s1">&quot;tsConfig&quot;</span><span class="s2">: </span><span class="s1">&quot;tsconfig.app.json&quot;</span><span class="s2">,</span>
+            <span class="s1">&quot;aot&quot;</span><span class="s2">: true,</span>
+            <span class="s1">&quot;assets&quot;</span><span class="s2">: </span><span class="s0">[</span>
+              <span class="s1">&quot;src/favicon.ico&quot;</span><span class="s2">,</span>
+              <span class="s1">&quot;src/assets&quot;</span>
+            <span class="s0">]</span><span class="s2">,</span>
+            <span class="s1">&quot;styles&quot;</span><span class="s2">: </span><span class="s0">[</span>
+              <span class="s1">&quot;src/styles.css&quot;</span><span class="s2">,</span>
+              <span class="s1">&quot;node_modules/bootstrap/dist/css/bootstrap.min.css&quot;</span>
+            <span class="s0">]</span><span class="s2">,</span>
+            <span class="s1">&quot;scripts&quot;</span><span class="s2">: </span><span class="s0">[</span>
+              <span class="s1">&quot;node_modules/jquery/dist/jquery.min.js&quot;</span><span class="s2">,</span>
+              <span class="s1">&quot;node_modules/bootstrap/dist/js/bootstrap.min.js&quot;</span>
+            <span class="s0">]</span>
+          <span class="s0">}</span><span class="s2">,</span>
+          <span class="s1">&quot;configurations&quot;</span><span class="s2">: </span><span class="s0">{</span>
+            <span class="s1">&quot;production&quot;</span><span class="s2">: </span><span class="s0">{</span>
+              <span class="s1">&quot;fileReplacements&quot;</span><span class="s2">: </span><span class="s0">[</span>
+                <span class="s0">{</span>
+                  <span class="s1">&quot;replace&quot;</span><span class="s2">: </span><span class="s1">&quot;src/environments/environment.ts&quot;</span><span class="s2">,</span>
+                  <span class="s1">&quot;with&quot;</span><span class="s2">: </span><span class="s1">&quot;src/environments/environment.prod.ts&quot;</span>
+                <span class="s0">}</span>
+              <span class="s0">]</span><span class="s2">,</span>
+              <span class="s1">&quot;optimization&quot;</span><span class="s2">: true,</span>
+              <span class="s1">&quot;outputHashing&quot;</span><span class="s2">: </span><span class="s1">&quot;all&quot;</span><span class="s2">,</span>
+              <span class="s1">&quot;sourceMap&quot;</span><span class="s2">: false,</span>
+              <span class="s1">&quot;extractCss&quot;</span><span class="s2">: true,</span>
+              <span class="s1">&quot;namedChunks&quot;</span><span class="s2">: false,</span>
+              <span class="s1">&quot;extractLicenses&quot;</span><span class="s2">: true,</span>
+              <span class="s1">&quot;vendorChunk&quot;</span><span class="s2">: false,</span>
+              <span class="s1">&quot;buildOptimizer&quot;</span><span class="s2">: true,</span>
+              <span class="s1">&quot;budgets&quot;</span><span class="s2">: </span><span class="s0">[</span>
+                <span class="s0">{</span>
+                  <span class="s1">&quot;type&quot;</span><span class="s2">: </span><span class="s1">&quot;initial&quot;</span><span class="s2">,</span>
+                  <span class="s1">&quot;maximumWarning&quot;</span><span class="s2">: </span><span class="s1">&quot;2mb&quot;</span><span class="s2">,</span>
+                  <span class="s1">&quot;maximumError&quot;</span><span class="s2">: </span><span class="s1">&quot;5mb&quot;</span>
+                <span class="s0">}</span><span class="s2">,</span>
+                <span class="s0">{</span>
+                  <span class="s1">&quot;type&quot;</span><span class="s2">: </span><span class="s1">&quot;anyComponentStyle&quot;</span><span class="s2">,</span>
+                  <span class="s1">&quot;maximumWarning&quot;</span><span class="s2">: </span><span class="s1">&quot;6kb&quot;</span><span class="s2">,</span>
+                  <span class="s1">&quot;maximumError&quot;</span><span class="s2">: </span><span class="s1">&quot;10kb&quot;</span>
+                <span class="s0">}</span>
+              <span class="s0">]</span>
+            <span class="s0">}</span>
+          <span class="s0">}</span>
+        <span class="s0">}</span><span class="s2">,</span>
+        <span class="s1">&quot;serve&quot;</span><span class="s2">: </span><span class="s0">{</span>
+          <span class="s1">&quot;builder&quot;</span><span class="s2">: </span><span class="s1">&quot;@angular-devkit/build-angular:dev-server&quot;</span><span class="s2">,</span>
+          <span class="s1">&quot;options&quot;</span><span class="s2">: </span><span class="s0">{</span>
+            <span class="s1">&quot;browserTarget&quot;</span><span class="s2">: </span><span class="s1">&quot;ms-front-web:build&quot;</span>
+          <span class="s0">}</span><span class="s2">,</span>
+          <span class="s1">&quot;configurations&quot;</span><span class="s2">: </span><span class="s0">{</span>
+            <span class="s1">&quot;production&quot;</span><span class="s2">: </span><span class="s0">{</span>
+              <span class="s1">&quot;browserTarget&quot;</span><span class="s2">: </span><span class="s1">&quot;ms-front-web:build:production&quot;</span>
+            <span class="s0">}</span>
+          <span class="s0">}</span>
+        <span class="s0">}</span><span class="s2">,</span>
+        <span class="s1">&quot;extract-i18n&quot;</span><span class="s2">: </span><span class="s0">{</span>
+          <span class="s1">&quot;builder&quot;</span><span class="s2">: </span><span class="s1">&quot;@angular-devkit/build-angular:extract-i18n&quot;</span><span class="s2">,</span>
+          <span class="s1">&quot;options&quot;</span><span class="s2">: </span><span class="s0">{</span>
+            <span class="s1">&quot;browserTarget&quot;</span><span class="s2">: </span><span class="s1">&quot;ms-front-web:build&quot;</span>
+          <span class="s0">}</span>
+        <span class="s0">}</span><span class="s2">,</span>
+        <span class="s1">&quot;test&quot;</span><span class="s2">: </span><span class="s0">{</span>
+          <span class="s1">&quot;builder&quot;</span><span class="s2">: </span><span class="s1">&quot;@angular-devkit/build-angular:karma&quot;</span><span class="s2">,</span>
+          <span class="s1">&quot;options&quot;</span><span class="s2">: </span><span class="s0">{</span>
+            <span class="s1">&quot;main&quot;</span><span class="s2">: </span><span class="s1">&quot;src/test.ts&quot;</span><span class="s2">,</span>
+            <span class="s1">&quot;polyfills&quot;</span><span class="s2">: </span><span class="s1">&quot;src/polyfills.ts&quot;</span><span class="s2">,</span>
+            <span class="s1">&quot;tsConfig&quot;</span><span class="s2">: </span><span class="s1">&quot;tsconfig.spec.json&quot;</span><span class="s2">,</span>
+            <span class="s1">&quot;karmaConfig&quot;</span><span class="s2">: </span><span class="s1">&quot;karma.conf.js&quot;</span><span class="s2">,</span>
+            <span class="s1">&quot;assets&quot;</span><span class="s2">: </span><span class="s0">[</span>
+              <span class="s1">&quot;src/favicon.ico&quot;</span><span class="s2">,</span>
+              <span class="s1">&quot;src/assets&quot;</span>
+            <span class="s0">]</span><span class="s2">,</span>
+            <span class="s1">&quot;styles&quot;</span><span class="s2">: </span><span class="s0">[</span>
+              <span class="s1">&quot;src/styles.css&quot;</span>
+            <span class="s0">]</span><span class="s2">,</span>
+            <span class="s1">&quot;scripts&quot;</span><span class="s2">: </span><span class="s0">[]</span>
+          <span class="s0">}</span>
+        <span class="s0">}</span><span class="s2">,</span>
+        <span class="s1">&quot;lint&quot;</span><span class="s2">: </span><span class="s0">{</span>
+          <span class="s1">&quot;builder&quot;</span><span class="s2">: </span><span class="s1">&quot;@angular-devkit/build-angular:tslint&quot;</span><span class="s2">,</span>
+          <span class="s1">&quot;options&quot;</span><span class="s2">: </span><span class="s0">{</span>
+            <span class="s1">&quot;tsConfig&quot;</span><span class="s2">: </span><span class="s0">[</span>
+              <span class="s1">&quot;tsconfig.app.json&quot;</span><span class="s2">,</span>
+              <span class="s1">&quot;tsconfig.spec.json&quot;</span><span class="s2">,</span>
+              <span class="s1">&quot;e2e/tsconfig.json&quot;</span>
+            <span class="s0">]</span><span class="s2">,</span>
+            <span class="s1">&quot;exclude&quot;</span><span class="s2">: </span><span class="s0">[</span>
+              <span class="s1">&quot;**/node_modules/**&quot;</span>
+            <span class="s0">]</span>
+          <span class="s0">}</span>
+        <span class="s0">}</span><span class="s2">,</span>
+        <span class="s1">&quot;e2e&quot;</span><span class="s2">: </span><span class="s0">{</span>
+          <span class="s1">&quot;builder&quot;</span><span class="s2">: </span><span class="s1">&quot;@angular-devkit/build-angular:protractor&quot;</span><span class="s2">,</span>
+          <span class="s1">&quot;options&quot;</span><span class="s2">: </span><span class="s0">{</span>
+            <span class="s1">&quot;protractorConfig&quot;</span><span class="s2">: </span><span class="s1">&quot;e2e/protractor.conf.js&quot;</span><span class="s2">,</span>
+            <span class="s1">&quot;devServerTarget&quot;</span><span class="s2">: </span><span class="s1">&quot;ms-front-web:serve&quot;</span>
+          <span class="s0">}</span><span class="s2">,</span>
+          <span class="s1">&quot;configurations&quot;</span><span class="s2">: </span><span class="s0">{</span>
+            <span class="s1">&quot;production&quot;</span><span class="s2">: </span><span class="s0">{</span>
+              <span class="s1">&quot;devServerTarget&quot;</span><span class="s2">: </span><span class="s1">&quot;ms-front-web:serve:production&quot;</span>
+            <span class="s0">}</span>
+          <span class="s0">}</span>
+        <span class="s0">}</span>
+      <span class="s0">}</span>
+    <span class="s0">}}</span><span class="s2">,</span>
+  <span class="s1">&quot;defaultProject&quot;</span><span class="s2">: </span><span class="s1">&quot;ms-front-web&quot;</span>
+<span class="s0">}</span>
+</pre>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<html>
+<head>
+<title>karma.conf.js</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #808080;}
+.s1 { color: #a9b7c6;}
+.s2 { color: #cc7832;}
+.s3 { color: #6a8759;}
+.s4 { color: #6897bb;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+karma.conf.js</font>
+</center></td></tr></table>
+<pre><span class="s0">// Karma configuration file, see link for more information</span>
+<span class="s0">// https://karma-runner.github.io/1.0/config/configuration-file.html</span>
+
+<span class="s1">module.exports = </span><span class="s2">function </span><span class="s1">(config) {</span>
+  <span class="s1">config.set({</span>
+    <span class="s1">basePath: </span><span class="s3">''</span><span class="s2">,</span>
+    <span class="s1">frameworks: [</span><span class="s3">'jasmine'</span><span class="s2">, </span><span class="s3">'@angular-devkit/build-angular'</span><span class="s1">]</span><span class="s2">,</span>
+    <span class="s1">plugins: [</span>
+      <span class="s1">require(</span><span class="s3">'karma-jasmine'</span><span class="s1">)</span><span class="s2">,</span>
+      <span class="s1">require(</span><span class="s3">'karma-chrome-launcher'</span><span class="s1">)</span><span class="s2">,</span>
+      <span class="s1">require(</span><span class="s3">'karma-jasmine-html-reporter'</span><span class="s1">)</span><span class="s2">,</span>
+      <span class="s1">require(</span><span class="s3">'karma-coverage-istanbul-reporter'</span><span class="s1">)</span><span class="s2">,</span>
+      <span class="s1">require(</span><span class="s3">'@angular-devkit/build-angular/plugins/karma'</span><span class="s1">)</span>
+    <span class="s1">]</span><span class="s2">,</span>
+    <span class="s1">client: {</span>
+      <span class="s1">clearContext: </span><span class="s2">false </span><span class="s0">// leave Jasmine Spec Runner output visible in browser</span>
+    <span class="s1">}</span><span class="s2">,</span>
+    <span class="s1">coverageIstanbulReporter: {</span>
+      <span class="s1">dir: require(</span><span class="s3">'path'</span><span class="s1">).join(__dirname</span><span class="s2">, </span><span class="s3">'./coverage/ms-front-web'</span><span class="s1">)</span><span class="s2">,</span>
+      <span class="s1">reports: [</span><span class="s3">'html'</span><span class="s2">, </span><span class="s3">'lcovonly'</span><span class="s2">, </span><span class="s3">'text-summary'</span><span class="s1">]</span><span class="s2">,</span>
+      <span class="s1">fixWebpackSourcePaths: </span><span class="s2">true</span>
+    <span class="s1">}</span><span class="s2">,</span>
+    <span class="s1">reporters: [</span><span class="s3">'progress'</span><span class="s2">, </span><span class="s3">'kjhtml'</span><span class="s1">]</span><span class="s2">,</span>
+    <span class="s1">port: </span><span class="s4">9876</span><span class="s2">,</span>
+    <span class="s1">colors: </span><span class="s2">true,</span>
+    <span class="s1">logLevel: config.LOG_INFO</span><span class="s2">,</span>
+    <span class="s1">autoWatch: </span><span class="s2">true,</span>
+    <span class="s1">browsers: [</span><span class="s3">'Chrome'</span><span class="s1">]</span><span class="s2">,</span>
+    <span class="s1">singleRun: </span><span class="s2">false,</span>
+    <span class="s1">restartOnFileChange: </span><span class="s2">true</span>
+  <span class="s1">})</span><span class="s2">;</span>
+<span class="s1">}</span><span class="s2">;</span>
+</pre>
+</body>
+</html>
